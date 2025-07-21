@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+
+        
+    
+         #header {
+            background-color:white;
+            padding: 25Spx;
+            border-radius: 0ch;
+            text-align: center;
+        }
+        #main{
+            background-color:#7727a5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 115px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+
+        #login-container {
+            background-color: #ffffff8a;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        #login-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+        }
+        #login-container h3{
+            text-decoration: underline;
+        }
+
+        #login-container input[type="text"],
+        #login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        #login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color:#60087a;
+            border: none;
+            color: aliceblue;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #login-container button:hover {
+            background-color: rgb(146, 9, 112);
+        }
+
+        .mensagem {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        img{
+            border-radius: 10px;
+        }
+         #footer {
+            background-color:#ffffff;
+            padding: 50px;
+            text-align: center;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="c:\Users\202430008775\Downloads\WhatsApp Image 2025-07-21 at 09.59.03.jpeg" height="200px" width="200px">
+    </div>
+    <center>
+    <div id="main">
+    <div id="login-container">
+          <img src="c:\Users\202430008775\Downloads\WhatsApp Image 2025-07-21 at 09.59.03.jpeg" height="80px" width="80px">
+        <h1> Faça seu Login </h1> <h3> não tem login? </h3><a href="cadastro.hmtl.html"><button>CLIQUE AQUI</button></a>
+
+        
+        <form onsubmit="return validarLogin()">
+            <input type="text" id="usuario" placeholder="Usuário" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <div id="mensagem">
+                
+            </div>
+        </form>
+        
+    </div>
+</div>
+    
+    <script>
+        function validarLogin() {
+            const usuario = document.getElementById("usuario").value;
+            const senha = document.getElementById("senha").value;
+            const mensagem = document.getElementById("mensagem");
+
+            if (usuario === "admin" && senha === "1234")
+             {
+                mensagem.style.color = "rgb(146, 9, 112)";
+                mensagem.textContent = "LOGIN AUTORIZADO!";
+
+                setTimeout(() => {
+                    window.location.href = "inicio.html";
+                }, 1000);
+            } else {
+                mensagem.style.color = "red";
+                mensagem.textContent = "Usuário ou senha incorretos. Tente novamente.";
+            }
+
+            return false; // Impede o envio do formulário
+        }
+    </script>
+    <div id="footer">
+         <img src="c:\Users\202430008775\Downloads\WhatsApp Image 2025-07-21 at 09.59.03.jpeg" height="200px" width="200px">
+    </div>
+</body>
+</html>
