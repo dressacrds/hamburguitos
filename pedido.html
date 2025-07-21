@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de PEDIDO</title>
+    <style>
+        #header {
+            background-color:#ffffff;
+            padding: 30px;
+            border-radius: 0ch;
+            text-align: center;
+        }
+        #nav{background-color:#fffb00;
+            padding: 5px;
+            border-radius: 0ch;
+             color:#000000;
+             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+                 
+            }
+            #nav h1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+        #main{
+            background-color:#4a165f;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 200px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+      input[type="submit"]{
+            background-color:#fffb00;
+            color:#000000 ;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.2s ease-out ;
+        }
+
+       input[type="submit"]:hover {
+            background-color: #633409;
+             transform: scale3d(1.1, 1.1, 1.1) rotate(2deg);
+                box-shadow: 0 10px 20px rgba(179, 26, 240, 0.616);
+                z-index: 1;
+            }
+            #nav button{
+                transition: 0.2s ease-out;
+                transform-origin:center center ;
+                color: rgb(240, 237, 237);
+                background-color:#fffb00;
+                color: #2D4024;
+                width: 7%;
+                padding: 7px;
+                border: none;
+            }
+            #nav button:hover{
+                transform: scale3d(1.1, 1.1, 1.1) rotate(2deg);
+                box-shadow: 0 10px 20px rgba(179, 26, 240, 0.616);
+                z-index: 1;
+            }
+            
+           
+    </style>
+</head>
+<body>
+    <div id="header">
+         <img src="c:\Users\202430008775\Downloads\WhatsApp Image 2025-07-21 at 09.59.03.jpeg" height="200px" width="200px">
+    </div>
+    <div id="nav">
+        <h1>FAÇA SEU PEDIDO</h1>
+          <a href="inicio.html"><button><h1>inicio</h1></button></a>
+          <button onclick="mostrarContato()"> <h1>contato</h1></button>
+          <script>
+            function mostrarContato() {
+                alert("Nosso número de Contato é: (84) 95485-7548");
+            }
+          </script>
+      
+        
+    </div>
+    
+   
+    <div id="main">    
+    
+        
+        <form id="FormPedido" method="GET" action="" name="cadastro">
+            <h2><p>Escolha seu hamburguer:</p></h2>
+            <input type="checkbox"  name="hamburguer1" value="BurguinOnion">
+            <label>BurguinOnion</label><br>
+            <input type="checkbox"  name="hamburguer2" value="BurguaoChicken">
+            <label>BurguaoChicken</label><br>
+            <input type="checkbox"  name="hamburguer3" value="BurguinBacon">
+            <label>BurguinBacon</label><br>
+            <input type="checkbox"  name="hamburguer4" value="BurguinCheddar">
+            <label>BurguinCheddar</label><br>
+            <input type="checkbox"  name="hamburguer5" value="BurguinCrispy">
+            <label>BurguinCrispy</label><br>
+            <section>
+            <h2><p>Escolha sua bebida:</p></h2>
+            <input type="checkbox" name="bebida1" value="Coca-Cola-LATA">
+            <label>Coca-Cola-LATA</label><br>
+            <input type="checkbox"  name="bebida2" value="Guaraná-antartica-LATA">
+            <label>Guaraná-antartica-LATA</label><br>
+            <input type="checkbox"  name="bebida3" value="Suco Del Valle">
+            <label>Suco Del Valle</label><br>
+            <input type="checkbox"  name="bebida4" value="Pepsi-LATA">
+            <label>Pepsi-LATA</label><br>
+            </section>
+            <section>
+              <h2><p>Escolha seu acompanhamento:</p></h2>
+            <input type="checkbox"  name="batata" value="Batata frita">
+            <label>Batata frita</label><br>
+            <input type="checkbox"  name="Cebola" value="Cebola empanada">
+            <label>Cebola empanada</label><br>
+            <input type="checkbox"  name="Frango" value="Frango empanado">
+            <label>Frango empanado</label><br>
+            <input type="checkbox"  name="Almofadita" value="Almofadita de Queijo">
+            <label>Almofadita de Queijo</label><br>
+                                      
+            </section>
+            <section>
+            <h2><p>Escolha sua pizza salgada:</p></h2>
+            <input type="checkbox"  name="pizza1" value="Calabresinha">
+            <label>Calabresinha</label><br>
+            <input type="checkbox"  name="pizza2" value="Marguerita">
+            <label>Marguerita</label><br>
+            <input type="checkbox"  name="pizza3" value="Três Queijos">
+            <label>Três Queijos</label><br>
+            <input type="checkbox"  name="pizza4" value="Portuguesa">
+            <label>Portuguesa</label><br>
+            <input type="checkbox"  name="pizza5" value="Cheddar e Bacon">
+            <label>Cheddar e Bacon</label><br>
+            <input type="checkbox"  name="pizza6" value="Frango c Catupiry">
+            <label>Frango com Catupiry</label>
+            </section>
+            <section>
+            <h2><p>Escolha sua pizza doce:</p></h2>
+            <input type="checkbox"  name="pizza7" value="Chocolate">
+            <label>Chocolate</label><br>
+            <input type="checkbox"  name="pizza8" value="Brigadeiro">
+            <label>Brigadeiro</label><br>
+            <input type="checkbox"  name="pizza9" value="Dueto">
+            <label>Dueto</label><br>
+            <input type="checkbox"  name="pizza10" value="confete">
+            <label>Confete</label><br>
+            <input type="checkbox"  name="pizza11" value="Banana Nevada">
+            <label>Banana nevada</label><br>
+            <input type="checkbox"  name="pizza12" value="Dueto c/ Morango">
+            <label>Dueto c/ Morango</label><br>
+            </section>
+            <section>
+            <label> <h2>Observações:</h2> </label><input type="text" name=“Observações” placeholder="Digite Observações...">
+            <label><h1>Endereço:</h1> </label><input type="text" name=“endereco” placeholder="Digite seu endereço completo..."><br>
+            </section>
+            <section>
+           <br> <input type="submit" value="Confirmar Envio">
+           </form>
+           <script>
+            document.getElementById("FormPedido").addEventListener("submit", function(event){
+                event.preventDefault();
+                alert("Seu pedido foi enviado");
+                this.reset();
+            });
+           </script>
+        
+            </section>
+            
+            
+        
+    </div>
+</body>
