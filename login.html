@@ -58,10 +58,14 @@
             color: aliceblue;
             border-radius: 5px;
             cursor: pointer;
+            transition: 0.2s ease-out;
         }
 
         #login-container button:hover {
             background-color: rgb(146, 9, 112);
+            transform: scale3d(1.1, 1.1, 1.1) rotateY(2deg);
+            box-shadow: 0 10px 20px rgba(179, 26, 240, 0.616);
+            z-index: 1;
         }
 
         .mensagem {
@@ -90,7 +94,7 @@
     <div id="main">
     <div id="login-container">
           <img src="c:\Users\202430008775\Downloads\WhatsApp Image 2025-07-21 at 09.59.03.jpeg" height="80px" width="80px">
-        <h1> Faça seu Login </h1> <h3> não tem login? </h3><a href="cadastro.hmtl.html"><button>CLIQUE AQUI</button></a>
+        <h1> Faça seu Login </h1> <h3> não tem login? </h3><a href="cadastro.html"><button>CLIQUE AQUI</button></a>
 
         
         <form onsubmit="return validarLogin()">
