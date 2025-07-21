@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+
+        
+    
+         #header {
+            background-color:rgb(255, 255, 255);
+            padding: 25px;
+            border-radius: 0ch;
+            text-align: center;
+        }
+        #main{
+            background-color:#7727a5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 68px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         #main2{
+            background-color:#7727a5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 68px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #login-container {
+            background-color:#ffffff8f;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        #login-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+        }
+        #login-container h3{
+            text-decoration: underline;
+        }
+
+        #login-container input[type="text"],
+        #login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        #login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5c0458;
+            border: none;
+            color: aliceblue;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #login-container button:hover {
+            background-color: rgb(160, 17, 105);
+        }
+        .mensagem {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        img{
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="c:\Users\202430008775\Downloads\WhatsApp Image 2025-07-21 at 09.59.03.jpeg" height="200px" width="200px">
+    </div>
+    <center>
+    <div id="main">
+    
+    <div id="login-container">
+          <img src="c:\Users\202430008775\Downloads\WhatsApp Image 2025-07-21 at 09.59.03.jpeg" height="80px" width="80px">
+             <h2> Já possui cadastro? </h2><h3>Faça o login </h3><a href="login.html"><button>CLIQUE AQUI</button></a>
+    <br><br>
+             <form>
+        <b>Nome Completo:<br>
+         <input type=text name="nome" width="3px" height="4px"><br>
+        Crie um nome de Usuário:<br>
+         <input type=text name="login"><br>
+        Digite uma senha forte:<br>
+         <input type="password" name="senha" value="abc"size="2px" maxlength="4">
+           Qual sua cidade:<br>
+         <select size="1" name="cidade">
+         <option value="NTL"> Natal </option>
+         <option value="PAR" selected> Parnamirim </option>
+         <option value="SNG"> São Gonçalo </option>
+    </select><br><BR>
+         <a href="inicio.html"><button><h3> CADASTRAR</h3></button> </a>
+         </form>  
+    </div>
+</body>
+</html>
