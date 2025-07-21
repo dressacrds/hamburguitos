@@ -93,7 +93,7 @@
           <img src="c:\Users\202430008775\Downloads\WhatsApp Image 2025-07-21 at 09.59.03.jpeg" height="80px" width="80px">
              <h2> Já possui cadastro? </h2><h3>Faça o login </h3><a href="login.html"><button>CLIQUE AQUI</button></a>
     <br><br>
-             <form>
+            <form id="Formcadast" method="GET" action="inicio.html" name="cadastro">
         <b>Nome Completo:<br>
          <input type=text name="nome" width="3px" height="4px"><br>
         Crie um nome de Usuário:<br>
